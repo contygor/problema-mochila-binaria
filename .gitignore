@@ -5,3 +5,4 @@ ep2
 
 # Temporary files
 *.tmp
+_codeql_detected_source_root
