@@ -1,0 +1,7 @@
+# Build artifacts
+ep2
+*.o
+*.exe
+
+# Temporary files
+*.tmp
