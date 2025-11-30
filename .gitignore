@@ -1,0 +1,8 @@
+# Build artifacts
+ep2
+*.o
+*.exe
+
+# Temporary files
+*.tmp
+_codeql_detected_source_root
