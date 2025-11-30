@@ -19,6 +19,9 @@ typedef struct {
     int numObjetos;
 } ResultadoGuloso;
 
+/* Declaração antecipada para liberarLista */
+void liberarLista(Objeto *inicio);
+
 Objeto* lerArquivo (FILE *file, int *tamanho, int *capacidade) {
     int peso, valor;
     Objeto *inicio = NULL;
@@ -32,6 +35,10 @@ Objeto* lerArquivo (FILE *file, int *tamanho, int *capacidade) {
 
     while (fscanf(file, "%d %d", &peso, &valor) == 2) {
         Objeto *novo = (Objeto*) malloc(sizeof(Objeto));
+        if (novo == NULL) {
+            liberarLista(inicio);
+            return NULL;
+        }
         novo->peso = peso;
         novo->valor = valor;
         novo->prox = NULL;
@@ -166,6 +173,10 @@ Objeto* copiarLista(Objeto *original) {
 
     while (orig != NULL) {
         Objeto *novo = (Objeto*) malloc(sizeof(Objeto));
+        if (novo == NULL) {
+            liberarLista(novaLista);
+            return NULL;
+        }
         novo->peso = orig->peso;
         novo->valor = orig->valor;
         novo->prox = NULL;
