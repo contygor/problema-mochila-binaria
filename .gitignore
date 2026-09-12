@@ -1,0 +1,19 @@
+# Executáveis gerados pela compilação
+mochila
+mochila.exe
+*.exe
+
+# Arquivos objeto e artefatos de build
+*.o
+build/
+bin/
+
+# Saídas temporárias geradas durante a execução
+/saida.txt
+/saida-readme.txt
+
+# Configurações locais do editor e do sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -6,7 +6,7 @@
  * Nome: Ygor Araujo da Silva
  * Nusp: 15506033
  * 
- * Obs: Não realizei nenhum tratamento de erro caso a entrada fornecida pelo usuário contenham mais de dois parâmetros por linha
+ * Obs: não foi realizado nenhum tratamento de erro caso a entrada fornecida pelo usuário contenham mais de dois parâmetros por linha
  * 
  */
 
